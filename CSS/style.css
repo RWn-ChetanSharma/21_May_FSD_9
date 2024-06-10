@@ -1,0 +1,20 @@
+ /* Syntax  */
+
+        /* Selector{
+            property1: value1;
+            property2: value2;
+        } */
+        
+        .External{
+            background-color: black;
+            color: khaki;
+            font-size: 30px;
+        }
+
+body{
+    background-color: thistle;
+}
+
+p{
+    color: green;
+}

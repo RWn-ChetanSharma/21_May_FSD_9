@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ways To Apply CSS</title>
+
+    <!-- Internal CSS is here  -->
+    <!-- Internal CSS -> We write Internal CSS in Head Tag with the help of style Tag -->
+
+
+
+    <style>
+
+        /* Syntax  */
+
+        /* Selector{
+            property1: value1;
+            property2: value2;
+        } */
+        
+        .Internal{
+            background-color: brown;
+            color: khaki;
+            font-size: 30px;
+        }
+
+
+    </style>
+
+
+<!-- External CSS is written here  -->
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Ways To Apply CSS</h1>
+
+    <hr>
+    <ul>
+        <!-- Inline CSS -> We write Inline CSS in Start Tag with the help of style Attribute -->
+        <li style="background-color: blue; color: aliceblue; font-size: 30px;">Inline CSS</li>
+        <li class="Internal">Internal CSS</li>
+        <li class="External">External CSS</li>
+    </ul>
+</body>
+</html>
