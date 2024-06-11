@@ -18,3 +18,7 @@ body{
 p{
     color: green;
 }
+div{
+    background-color: crimson;
+    color: aliceblue;
+}
