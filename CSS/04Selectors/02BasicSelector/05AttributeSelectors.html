@@ -48,6 +48,57 @@
     <div class="box-4">box-4</div>
     <div class="box-5">box-5</div>
     
-   
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <hr>
+   <ul>
+    <li><a href="#internal">Internal link</a></li>
+    <li><a href="http://example.com">Example link</a></li>
+    <li><a href="#InSensitive">Insensitive internal link</a></li>
+    <li><a href="http://example.org">Example org link</a></li>
+    <li><a href="https://example.org">Example https org link</a></li>
+  </ul>
 </body>
 </html>
+
+<style>
+    a {
+  color: blue;
+}
+
+/* Internal links, beginning with "#" */
+/* a[href^="#"] {
+  background-color: gold;
+} */
+
+/* Links with "example" anywhere in the URL */
+/* a[href*="example"] {
+  background-color: rgb(194, 31, 31);
+} */
+
+/* Links with "insensitive" anywhere in the URL,
+   regardless of capitalization */
+/* a[href*="insensitive" i] {
+  color: cyan;
+} */
+
+/* Links with "cAsE" anywhere in the URL,
+with matching capitalization */
+/* a[href*="cAsE" s] {
+  color: pink;
+} */
+
+/* Links that end in ".org" */
+/* a[href$=".org"] {
+  color: red;
+} */
+
+/* Links that start with "https://" and end in ".org" */
+/* a[href^="https://"][href$=".org"]
+{
+  color: green;
+} */
+</style>

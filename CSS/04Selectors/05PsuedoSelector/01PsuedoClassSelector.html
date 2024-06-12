@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Class Selector</title>
+
+    <style>
+        h1:hover{
+            background-color: brown;
+            color: khaki;
+            font-size: 50px;
+        }
+        /* p:last-child{ */
+        p:nth-child(2n+1){
+            background-color: teal;
+            color: khaki;
+        }
+        a{
+            color: brown;
+        }
+        a:active{
+            color: green;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Psuedo Class Selector (:)</h1>
+    <hr>
+    <a href="https://www.google.com">Google</a>
+    <hr>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ipsa.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ipsa.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ipsa.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ipsa.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ipsa.</p>
+</body>
+</html>
