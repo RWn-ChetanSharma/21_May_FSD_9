@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background In CSS</title>
+    <style>
+        div{
+            border: 10px dashed red;
+            height: 500px;
+            margin: 20px 0px;
+            font-size: 30px;
+
+        }
+        .background-attachment{
+            background-image: url(../../Images/atal-bridge.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            background-attachment: fixed;
+            
+        }
+        .background-clip{
+            background-image: url(../../Images/atal-bridge.webp);
+            background-repeat: no-repeat;
+            padding: 100px;
+            background-clip: border-box;
+            background-clip: padding-box;
+            background-clip: content-box;
+
+        }
+        .background-color{
+            background-color: brown;
+            color: aliceblue;
+        }
+        .background-image{
+            background-image: url(../../Images/atal-bridge.webp);
+        }
+       
+        .background-origin{
+            background-image: url(../../Images/atal-bridge.webp);
+            background-repeat: no-repeat;
+            padding: 100px;
+            background-origin: border-box;
+            background-origin: padding-box;
+            background-origin: content-box;
+            
+        }
+        .background-position{
+            background-image: url(../../Images/atal-bridge.webp);
+            background-repeat: no-repeat;
+            background-size: 200px;
+            background-position: center;
+            background-position: top;
+            background-position: right;
+            background-position: left;
+            background-position: bottom;
+            background-position: 50% 50%;
+            
+        }
+        .background-repeat{
+            background-image: url(../../Images/atal-bridge.webp);
+            background-repeat: repeat-y;
+            background-repeat: repeat-x;
+            background-repeat: no-repeat;
+        }
+        .background-size{
+            background-image: url(../../Images/atal-bridge.webp);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-size: cover;
+            background-size: 200px;
+        }
+        .background-shorthand{
+            border: 10px dotted blue;
+            height: 100vh;
+            background: url(../../Images/atal-bridge.webp)no-repeat center center/cover;
+        }
+        .background-multiple{
+            background-image: url(../../Images/css_logo.png), url(../../Images/atal-bridge.webp);
+            background-size: 200px, 300px;
+            background-repeat: no-repeat;
+            background-position: left, right;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Background In CSS</h1>
+    <hr />
+    <ul>
+      <li>background-attachment</li>
+      <li>background-clip</li>
+      <li>background-color</li>
+      <li>background-image</li>
+      <li>background-origin</li>
+      <li>background-position</li>
+      <li>background-repeat</li>
+      <li>background-size</li>
+      <li>background-shorthand</li>
+      <li>background-multiple</li>
+    </ul>
+
+    <hr>
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-clip">background-clip</div>
+    <div class="background-color">background-color</div>
+    <div class="background-image">background-image</div>
+    <div class="background-origin">background-origin</div>
+    <div class="background-position">background-position</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-size">background-size</div>
+    <div class="background-shorthand">background-shorthand</div>
+    <div class="background-multiple">background-multiple</div>
+  </body>
+</html>
