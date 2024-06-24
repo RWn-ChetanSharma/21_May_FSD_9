@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <!-- Internal CSS  -->
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: thistle;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            color: khaki;
+            border: 2px solid lime;
+            font-size: 30px;
+            text-align: center;
+            animation-name: jadu;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-iteration-count: 2;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(5, end);
+            animation-timing-function: ease-in-out;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-direction: alternate;
+            animation-direction: alternate-reverse;
+            animation-direction: reverse;
+            /* animation-play-state: paused; */
+            /* animation-play-state: running; */
+            
+        }
+
+
+        @keyframes jadu {
+            from{
+                margin-left: 0px;  
+            }
+            to{
+                margin-left: 800px;
+                border-radius: 50%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">Jadu</div>
+
+
+
+
+</body>
+</html>
