@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow Filter</title>
+
+    <style>
+      body {
+        background-color: thistle;
+      }
+      .box {
+        width: 500px;
+        height: 500px;
+        border: 3px dashed lime;
+        font-size: 30px;
+        color: aliceblue;
+        text-align: center;
+        /* background-color: blueviolet; */
+        background: url(../../Images/atal-bridge.webp)no-repeat center center/cover;
+        box-shadow: 10px 10px 10px grey;
+        filter: blur(5px);
+        filter: brightness(0.4);
+        filter: contrast(200%);
+        filter: drop-shadow(16px 16px 20px blue);
+        filter: grayscale(50%);
+        filter: hue-rotate(90deg);
+        filter: invert(75%);
+        filter: opacity(25%);
+        filter: saturate(30%);
+        filter: sepia(60%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
