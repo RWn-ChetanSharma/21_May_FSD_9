@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <!-- Internal CSS  -->
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+            font-size: 30px;
+            color: aliceblue;
+        }
+        body{
+            background-color: thistle;
+        }
+        .container{
+            background-color: aquamarine;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .row{
+            background-color: blueviolet;
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+            /* flex-direction: column; */
+            /* flex-wrap: wrap; */
+            /* align-items: center; */
+            /* align-content: center; */
+            /* gap: 20px; */
+        }
+        div[class*="box"]{
+            width: 300px;
+            height: 300px;
+            background-color: brown;
+        }
+        .box-2{
+            /* order: 1; */
+            /* flex-grow: 1;   */
+             /* default 0 */
+             /* flex-shrink: 2; */
+             /* align-self: end; */
+        }
+        .box-1{
+            /* order:2; */
+            /* flex-grow: 1; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="box-1">Box-1</div>
+            <div class="box-2">Box-2</div>
+            <div class="box-3">Box-3</div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
