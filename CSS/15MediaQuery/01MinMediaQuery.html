@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- First Line Of Responsive  -->
+    <!-- name="viewport"  => user's Visible Area -->
+    <!-- content="width=device-width, => Width 100% -->
+    <!-- initial-scale=1.0" => Zoom 100%-->
+    <title>Min Media Query</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: thistle;
+      }
+      h1::after {
+        content: " Original";
+      }
+
+      /* Media Query  */
+
+      /* // X-Small devices (portrait phones, less than 576px) */
+      /* // No media query for `xs` since this is the default in Bootstrap */
+
+      /* // Small devices (landscape phones, 576px and up) */
+      @media (min-width: 576px) {
+        body {
+          background-color: saddlebrown;
+        }
+        h1::after {
+          content: " 576px";
+        }
+      }
+
+      /* // Medium devices (tablets, 768px and up) */
+      @media (min-width: 768px) {
+        body {
+          background-color: seagreen;
+        }
+        h1::after {
+          content: " 768px";
+        }
+      }
+
+      /* // Large devices (desktops, 992px and up) */
+      @media (min-width: 992px) {
+        body {
+          background-color: slateblue;
+        }
+        h1::after {
+          content: " 992px";
+        }
+      }
+
+      /* // X-Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) {
+        body {
+          background-color: salmon;
+        }
+        h1::after {
+          content: " 1200px";
+        }
+      }
+
+      /* // XX-Large devices (larger desktops, 1400px and up) */
+      @media (min-width: 1400px) {
+        body {
+          background-color: steelblue;
+        }
+        h1::after {
+          content: " 1400px";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media</h1>
+  </body>
+</html>

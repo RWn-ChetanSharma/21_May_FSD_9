@@ -42,7 +42,10 @@ li{
 
 #section1{
     /* background-color: #e8631c; */
-    background: url(Image/banner2.png)no-repeat center center/cover;
+    /* background: url(Image/banner2.png)no-repeat center center/cover; */
+    background-image: url(Image/banner1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     z-index: 2;
 
