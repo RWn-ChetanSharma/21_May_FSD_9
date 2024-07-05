@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckBox Click</title>
+
+    <!-- Font Awesome CDN  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Internal CSS  -->
+
+    <style>
+      p {
+        display: none;
+      }
+      input:checked + p {
+        display: block;
+      }
+      input{
+        opacity: 0;
+      }
+      .parent{
+        position: relative;
+      }
+      .hey{
+        position: absolute;
+        left: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <i class="fa-solid fa-bars hey"></i>
+      <input type="checkbox" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, cum
+        rerum? Dicta numquam tempore aliquam, laborum harum veritatis totam modi
+        magnam iure maiores, ipsum aspernatur voluptate earum vel qui ipsam.
+      </p>
+    </div>
+  </body>
+</html>
